@@ -14,3 +14,8 @@ public static void main(String args[]) throws Exception {
 			InetAddress IPAddress = receivePacket.getAddress();
 			int port = receivePacket.getPort();
 		    sendData = sentence.getBytes();
+                        DatagramPacket sendPacket =new DatagramPacket(sendData, sendData.length, IPAddress, port);
+			serverSocket.send(sendPacket);
+		}
+	}
+}
