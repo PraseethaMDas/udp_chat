@@ -13,3 +13,4 @@ public static void main(String args[]) throws Exception {
 			System.out.println("RECEIVED: " + sentence);
 			InetAddress IPAddress = receivePacket.getAddress();
 			int port = receivePacket.getPort();
+		    sendData = sentence.getBytes();
