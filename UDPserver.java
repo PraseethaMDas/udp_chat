@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-class UDPServer {
+class UDPserver {
 public static void main(String args[]) throws Exception {
 		DatagramSocket serverSocket = new DatagramSocket(9876);
        		BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
