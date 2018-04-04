@@ -21,5 +21,6 @@ class UDPClient
 		  String modifiedSentence = new String(receivePacket.getData(),0, receivePacket.getLength());
 		  System.out.println("FROM SERVER:" + modifiedSentence);
       }while (!sentence.trim().equals("bye"));
+	clientSocket.close();
    }
 }
